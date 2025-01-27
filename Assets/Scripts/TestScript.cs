@@ -6,11 +6,12 @@ namespace AG3959
     {
 
         [SerializeField] Transform target;
+        [SerializeField] float justANumber;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
-
+            // target = FindAnyObjectByType<DiceManager>().transform;
         }
 
         // Update is called once per frame
