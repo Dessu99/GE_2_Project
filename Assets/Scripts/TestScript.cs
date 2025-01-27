@@ -6,7 +6,7 @@ namespace AG3959
     {
 
         [SerializeField] Transform target;
-        [SerializeField] float justANumber;
+        [SerializeField] float bustANumber = 5.0f;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
