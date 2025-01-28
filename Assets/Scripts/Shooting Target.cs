@@ -1,16 +1,17 @@
 using UnityEngine;
 
-public class ShootingTarget : MonoBehaviour
+namespace Ag3959
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class ShootingTarget : MonoBehaviour
     {
-        
-    }
+        void Start()
+        {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        }
+
+        void Update()
+        {
+
+        }
+    } 
 }
