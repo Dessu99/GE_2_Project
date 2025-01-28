@@ -1,19 +1,50 @@
 using UnityEngine;
+using Unity.FPS.Game;
+using Unity.FPS.UI;
 
-public class DamagableTarget : MonoBehaviour
+namespace AG3959
 {
-    void Start()
+    public class DamagableTarget : Damageable
     {
-        
+        public Renderer objectRenderer;
+        public Color swapcolour = Color.green;
+        public Color originalColour;
+        public bool colourSwapped = false;
+        private void Start()
+        {
+            objectRenderer = GetComponent<Renderer>();
+            originalColour = GetComponent<Color>();
+
+        }
+        private void Awake()
+        {
+            
+
+        }
+        public override void InflictDamage(float damage, bool isExplosionDamage, GameObject damagesSouce)
+        {
+            base.InflictDamage(damage, isExplosionDamage, damagesSouce);
+
+            SwapColour();
+        }
+        public void SwapColour()
+        {
+            if(!colourSwapped)
+            {
+                objectRenderer.material.color = swapcolour;
+            }
+            else
+            {
+
+            }
+
+            public virtual 
+        }
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 
-    public void SwapColour()
-    {
-        if 
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
