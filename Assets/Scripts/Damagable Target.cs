@@ -35,16 +35,11 @@ namespace AG3959
             }
             else
             {
-
+                objectRenderer.material.color = originalColour;
             }
-
-            public virtual 
         }
         // Update is called once per frame
-        void Update()
-        {
-
-        }
+   
     }
 
 }
