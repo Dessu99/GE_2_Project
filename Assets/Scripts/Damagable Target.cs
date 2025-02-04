@@ -8,7 +8,7 @@ namespace AG3959
     {
         public Renderer objectRenderer;
         public Color swapcolour = Color.green;
-        public Color originalColour;
+        public Color originalColour = Color.blue;
         public bool colourSwapped = false;
         private void Start()
         {
@@ -16,12 +16,8 @@ namespace AG3959
             originalColour = GetComponent<Color>();
 
         }
-        private void Awake()
-        {
-            
-
-        }
-        public override void InflictDamage(float damage, bool isExplosionDamage, GameObject damagesSouce)
+     
+        /* public override void InflictDamage(float damage, bool isExplosionDamage, GameObject damagesSouce)
         {
             base.InflictDamage(damage, isExplosionDamage, damagesSouce);
 
@@ -37,8 +33,7 @@ namespace AG3959
             {
                 objectRenderer.material.color = originalColour;
             }
-        }
-        // Update is called once per frame
+        } */
    
     }
 
