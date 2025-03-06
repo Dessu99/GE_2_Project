@@ -1,0 +1,40 @@
+using UnityEngine;
+using Unity.FPS.Game;
+using Unity.FPS.UI;
+
+namespace AG3959
+{
+    public class DamagableTarget : Damageable
+    {
+        public Renderer objectRenderer;
+        public Color swapcolour = Color.green;
+        public Color originalColour = Color.blue;
+        public bool colourSwapped = false;
+        private void Start()
+        {
+            objectRenderer = GetComponent<Renderer>();
+            originalColour = GetComponent<Color>();
+
+        }
+     
+        /* public override void InflictDamage(float damage, bool isExplosionDamage, GameObject damagesSouce)
+        {
+            base.InflictDamage(damage, isExplosionDamage, damagesSouce);
+
+            SwapColour();
+        }
+        public void SwapColour()
+        {
+            if(!colourSwapped)
+            {
+                objectRenderer.material.color = swapcolour;
+            }
+            else
+            {
+                objectRenderer.material.color = originalColour;
+            }
+        } */
+   
+    }
+
+}
